@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de sesion</title>
+    <!--Aquí se enlaza la hoja de estilo-->
+    <link rel="stylesheet" href="/css/master.css">
+</head>
+<body>
+    <div class="login-box">
+        <img src="/img/logo.jpeg" alt="Logo Propocionado" class="avatar">
+        <h1>Entrar:</h1>
+        <form action="#" method="post">
+            <!--User name-->
+            <label for="username">Usuario:</label>
+            <input type="text" placeholder="Ingresa tu usuario o correo" id="username">
+
+            <!--Password-->
+            <label for="pass">Contraseña:</label>
+            <input type="password" placeholder="Ingresa tu constraseña" id="pass">
+
+            <input type="submit" value="Iniciar sesion" onclick="return envio_datos();">
+
+            <a href="#">¿Has olvidado tu contraseña?</a>
+            <a href="/html/registro.html">¿No tienes una cuenta?</a>
+
+        </form>
+
+    </div>
+    <script src="/js/procesar_datos.js"></script>
+</body>
+</html>

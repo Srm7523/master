@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <!--Aquí se enlaza la hoja de estilo-->
+    <link rel="stylesheet" href="/css/registro.css">
+</head>
+<body>
+    <!--El div nos irve para seccionar nuestro HTML-->
+    <!--Atributo class para poder especifiar estilo dentro del CSS-->
+    <div class="login-box">
+        <img src="/img/logo.jpeg" alt="Logo Propocionado" class="avatar">
+        <h1>Entrar:</h1>
+        <form action="/index.html" method="post">
+            <!--User name-->
+            <label for="username">Nombre completo:</label>
+            <input type="text" placeholder="Ingresa tu nombre completo" id="username">
+
+            <!--Password-->
+            <label for="pass">Correo electronico:</label>
+            <input type="email" placeholder="Ingresa tu correo electronico" id="email">
+
+            <!--User name-->
+            <label for="username">Contraseña:</label>
+            <input type="password" placeholder="Ingresa tu contraseña" id="pass">
+
+            <!--Password-->
+            <label for="pass">Vuelve a escribir la contaseña:</label>
+            <input type="password" placeholder="Vuelve a escribir la constraseña" id="pass">
+
+            
+            <input type="submit" value="Registrarse" onclick="return volver();">
+            <input type="submit" value="Volver" onclick="return volver();">
+
+            
+
+        </form>
+
+    </div>
+    <script src="/js/app.js"></script>
+
+</body>
+</html>
